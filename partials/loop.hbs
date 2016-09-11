@@ -1,0 +1,27 @@
+<div class="container">
+<br />
+<div class="card-columns">
+  {{#foreach posts}}
+    <div class="card">
+      <a href="{{url}}"><img class="card-img-top" src="{{image}}" alt="Card image cap"></a>
+      <div class="card-block">
+        <h4 class="card-title"><a href="{{url}}">{{{title}}}</a></h4>
+        
+        <p class="card-text">{{excerpt words=25}}…</p>
+        {{#if tags}}
+          Tags: {{tags separator=" | "}}
+        {{/if}}
+        <hr />
+        {{#author}}<a href="{{url}}"><img src="{{image}} " alt="{{name}}" class="pull-left img-author img-circle"></a>
+        <p class="card-text"><a href="{{url}}">{{name}}</a></p>{{/author}}
+        <p class="text-xs-right card-text"><small class="text-muted">{{date format='dddd DD MMM YYYY'}}</small></p>
+      </div>
+    </div>
+
+  {{/foreach}}
+</div>
+{{#if pagination}}
+{{{pagination}}}
+{{/if}}
+
+</div>
