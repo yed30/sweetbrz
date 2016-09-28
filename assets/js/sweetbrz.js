@@ -1,4 +1,5 @@
-
+/*jshint esversion: 6 */
+/*jshint -W061 */
 if (sbrzGSearchID) {
   (function() {
     var gcse = document.createElement('script');
@@ -20,7 +21,19 @@ function activateSocial(id){
 }
 var sbrzGSearchID;
 var sbrzLinkedin, sbrzGoogleplus, sbrzGithub, sbrzDribbble, sbrzPinterest, sbrzVimeo, sbrzDropbox, sbrzWechat, sbrzYoutube, sbrzPay, sbrzPayLabel, sbrzFacebook, sbrzTwitter;
-var sbrzlist={ sbrzLinkedin, sbrzGoogleplus, sbrzGithub, sbrzDribbble, sbrzPinterest, sbrzVimeo, sbrzDropbox, sbrzWechat, sbrzYoutube, sbrzFacebook, sbrzTwitter } ;
+var sbrzlist={ 
+    sbrzLinkedin:'sbrzLinkedin', 
+	sbrzGoogleplus:'sbrzGoogleplus',
+	sbrzGithub:'sbrzGithub',
+	sbrzDribbble:'sbrzDribbble',
+	sbrzPinterest:'sbrzPinterest',
+	sbrzVimeo:'sbrzVimeo',
+	sbrzDropbox:'sbrzDropbox',
+	sbrzWechat:'sbrzWechat',
+	sbrzYoutube:'sbrzYoutube',
+	sbrzFacebook:'sbrzFacebook',
+	sbrzTwitter:'sbrzTwitter'
+};
 $( document ).ready(function() {
   for (var brzsocial in sbrzlist) {
 	activateSocial(brzsocial);
