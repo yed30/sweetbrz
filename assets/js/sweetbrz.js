@@ -48,4 +48,25 @@ $( document ).ready(function() {
   } else {
    document.getElementById("sbrzPay").remove();
   }
-});
+   });
+
+/* globals jQuery, document */
+(function($, undefined) {
+   // fancybox config
+  $('.post-content a:has(img)').addClass('fancybox');
+  $(".fancybox").attr('rel', 'gallery-group').fancybox({
+    helpers: {
+      overlay: {
+        css: {
+          'background': 'rgba(0, 154, 97, 0.33)'
+        },
+        locked: false
+      }
+    },
+    beforeShow: function() {
+      var alt = this.element.find('img').attr('alt');
+      this.inner.find('img').attr('alt', alt);
+      this.title = alt;
+    }
+  }); 
+})(jQuery);

@@ -10,13 +10,13 @@
     <meta name="description" content="{{meta_description}}" />
 
     {{! Styles }}
-    <link rel="stylesheet" href="{{asset "css/font-awesome.min.css"}}">
-    <link rel="stylesheet" href="{{asset "css/bootstrap.min.css"}}" >
-    <link rel="stylesheet" href="{{asset "css/sweetbrz.min.css"}}">
-    <link rel="stylesheet" href="{{asset "css/prism.css"}}">
-
+    <link rel="stylesheet" href="{{asset "lib/fontawesome/font-awesome.min.css"}}">
+    <link rel="stylesheet" href="{{asset "lib/bootstrap/bootstrap.min.css"}}" >
+    <link rel="stylesheet" href="{{asset "lib/fancybox/jquery.fancybox.css"}}" />
+    <link rel="stylesheet" href="{{asset "css/prism.min.css"}}">
+    <link rel="stylesheet" href="{{asset "css/sweetbrz.css"}}">
+    
     <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
-
 
     {{! Responsive Meta Tags }}
     <meta name="HandheldFriendly" content="True" />
@@ -35,10 +35,11 @@
   {{>foot}}
   {{ghost_foot}}
   <!-- Compressed JavaScript -->
-  <script src="{{asset "js/jquery-2.1.4.min.js"}}"></script>
-  <script src="{{asset "/js/tether.min.js"}}"></script>
-  <script src="{{asset "/js/prism.js"}}"></script>
-  <script src="{{asset "/js/sweetbrz.min.js"}}"></script>
-  <script src="{{asset "/js/bootstrap.min.js"}}" ></script>
+  <script src="{{asset "lib/jquery/jquery.min.js"}}"></script>
+  <script src="{{asset "lib/tether/tether.min.js"}}"></script>
+  <script src="{{asset "lib/bootstrap/bootstrap.min.js"}}" ></script>
+  <script src="{{asset "lib/fancybox/jquery.fancybox.pack.js"}}"></script>
+  <script src="{{asset "js/prism.min.js"}}"></script>
+  <script src="{{asset "js/sweetbrz.js"}}"></script>
 </body>
 </html>

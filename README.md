@@ -11,6 +11,7 @@ A demo is available on [this blog](https://ylegoff.com).
 - Design Clean
 - Search box with [Google Custom Search ](https://cse.google.com/cse/all)
 - Cover images for blog, posts, tags et auteurs.
+- [FancyBox](http://fancybox.net) support for images in posts
 - Social Icons
 - Code syntax support with [PrismJS](http://prismjs.com/#languages-list)
 - Menus and static pages support
