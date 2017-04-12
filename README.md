@@ -21,12 +21,12 @@ A demo is available on [this blog](https://ylegoff.com).
 # Installation
 Read the article [How to Install a Ghost Theme](https://www.ghostforbeginners.com/how-to-install-a-ghost-theme) 
 
-# Paramétrage
-All parameterization is done using the menu Code Injection, dans la partie Blog Header.
+# Configuration
+All configuration is done using the menu Code Injection, in the Blog Header section.
 
 ## Social 
-Add the code below in the Blog Header paty
-Fill the URLs you want, remove the other ones.
+Add the code below in the Blog Header section
+Fill the URLs you want and remove unwanted ones.
 
 ```javascript
 <script>
